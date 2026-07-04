@@ -1,0 +1,59 @@
+{
+  "name": "ExactlyOne",
+  "type": "integration-gateway",
+  "version": "0.1.0",
+  "domain": "exactlyone.dev",
+  "summary": "Unified public entry for independently developed projects.",
+  "children": [
+    {
+      "id": "mortal",
+      "name": "Mortal",
+      "label": "Blog",
+      "kind": "content",
+      "path": "../Mortal",
+      "repo": "https://github.com/DnaBoss/Mortal.git",
+      "publicPath": "/blog"
+    },
+    {
+      "id": "algo-lab",
+      "name": "Algo-Lab",
+      "label": "Algo Lab",
+      "kind": "learning",
+      "path": "../Algo-Lab",
+      "repo": "https://github.com/DnaBoss/Algo-Lab.git",
+      "publicPath": "/algo"
+    },
+    {
+      "id": "helios",
+      "name": "Helios",
+      "label": "Helios",
+      "kind": "platform",
+      "path": "../Helios",
+      "repo": "https://github.com/DnaBoss/Helios.git",
+      "publicPath": "/helios"
+    },
+    {
+      "id": "easy-pg",
+      "name": "Easy-PG",
+      "label": "Easy DB",
+      "kind": "tool",
+      "path": "../Easy-PG",
+      "repo": null,
+      "publicPath": "/easy-db"
+    },
+    {
+      "id": "fluke",
+      "name": "Fluke",
+      "label": "Fluke",
+      "kind": "game",
+      "path": "../Fluke",
+      "repo": "https://github.com/DnaBoss/Fluke.git",
+      "publicPath": "/fluke"
+    }
+  ],
+  "rules": [
+    "ExactlyOne owns the public entry, navigation, shared visual language, and deploy routing only.",
+    "Project content, business logic, databases, migrations, admin tools, and private operations stay inside the owning project.",
+    "Cross-project integration must use links, reverse-proxy routes, or explicit adapters."
+  ]
+}
