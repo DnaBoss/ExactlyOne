@@ -38,7 +38,7 @@
       "label": "Easy DB",
       "kind": "tool",
       "path": "../Easy-PG",
-      "repo": null,
+      "repo": "https://github.com/DnaBoss/Easy-PG.git",
       "publicPath": "/easy-db"
     },
     {
